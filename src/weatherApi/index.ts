@@ -29,6 +29,7 @@ export const fetchWeatherForcast = async (location: string) => {
     throw Error('Some shit happened');
   }
 
-  console.info(data)
+  console.log('data', data.location);
+
   return data as Weather;
 };

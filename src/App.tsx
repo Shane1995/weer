@@ -33,7 +33,13 @@ function App() {
         Find
       </button>
       <div className="current-weather">
-        {weatherForecast?.current.temp_c}&deg;
+        temp: {weatherForecast?.current.temp_c}&deg;
+      </div>
+      <div className="current-weather">
+        Country: {weatherForecast?.location.country};
+      </div>
+      <div className="current-weather">
+        region: {weatherForecast?.location.region};
       </div>
     </div>
   );
